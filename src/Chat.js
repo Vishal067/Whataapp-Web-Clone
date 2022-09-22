@@ -24,8 +24,8 @@ function Chat () {
 
   const onEmojiClick = (event, emojiObject) => {
     console.log(emojiObject)
-    setChosenEmoji(emojiObject.emoji);
-    setInput(emojiObject.emoji)
+    setChosenEmoji(emojiObject)
+    setInput(input + emojiObject.emoji)
   };
 
   useEffect(() => {
